@@ -24,14 +24,20 @@ VS code doesn't natively support text effects and as a result, the glow is exper
 If you do decide use the glow effect, you do so at your own risk. Bring your Sunglasses. Here be (laser)dragons.
 
 ### To enable the glow
-As of v0.1.0, external extensions are no longer needed to active the glow. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Enable Neon Dreams__". It will prompt you to restart, and when you do the lights should be on :)
+As of v0.1.0, external extensions are no longer needed to active the glow. 
+
+If you have been using Synthwave prior to v0.1.0, you will likely have used the Custom CSS and JS extension to enable the glow. Before enabling Neon Dreams, you will need to disable the prior method. You can do this by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Disable Custom CSS and JS__"
+
+To activate the glow, open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Enable Neon Dreams__". It will prompt you to restart, and when you do the lights should be on :)
 
 #### To customise the glow brightness
 In your `settings.json` add the key:
 ```
 "synthwave84.brightness": "0.45"
 ```
-The value should be a _float value_ from 0 to 1, where 00 is fully transparent. The default brightness is 0.45. To avoid eye strain, avoid using higher brightness values for extended periods of time.
+The value should be a _float value_ from 0 to 1, where 0.0 is fully transparent. The default brightness is 0.45. To avoid eye strain, avoid using higher brightness values for extended periods of time. 
+
+Note: Changing the brightness currently only affects the opacity of the glow, the text will remain white (that may change in future updates). If you want to disable the glow effect but retain the chrome updates, see below.
 
 #### To enable editor chrome updates, but disable glow
 In your `settings.json` add the key:
@@ -49,7 +55,7 @@ The glow effect started as a joke and was never intended for long-term coding se
 I haven't included a font in this release as I know that it's a very personal preference. The font I use (that is seen in the image above) is [Fira Code](https://github.com/tonsky/FiraCode), which I recommend if you're a fan of ligatures.
 
 ## Compatibility
-This theme is **very much a work in progress**. I primarily develop in HTML & CSS, JS, React and Elixir so, whilst those language sets should look pretty good, there will likely be issues for other languages. I'll work on adding more support as I go. If you find anything glaringly wrong, raise an issue and I'll try to fix it as soon as I can.
+This theme is still **very much a work in progress**. I primarily develop in HTML & CSS, JS, React and Elixir so, whilst those language sets should look pretty good, there will likely be issues for other languages. I'll work on adding more support as I go. If you find anything glaringly wrong, raise an issue and I'll try to fix it as soon as I can.
 
 ## Contributing
 I'm really happy to consider any contributions to this theme. Before you make any changes, [please read the contribution guide](https://github.com/robb0wen/synthwave-vscode/blob/master/CONTRIBUTING.md).
